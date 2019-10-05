@@ -34,7 +34,7 @@ RUN cp contrib/docker/php.ini /usr/local/etc/php/conf.d/pixelfed.ini
 RUN composer install --prefer-dist --no-interaction
 RUN rm -rf html && ln -s public html
 
-VOLUME /var/www/storage /var/www/bootstrap
+VOLUME /var/www/storage
 
 ENV APP_ENV=production \
     APP_DEBUG=false \
