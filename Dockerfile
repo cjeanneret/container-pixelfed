@@ -50,5 +50,6 @@ ENV APP_ENV=production \
     ACTIVITY_PUB=true
 
 COPY init.sh /init.sh
+COPY zz-docker.conf /usr/local/etc/php-fpm.d/
 RUN chmod 0555 /init.sh
 CMD /init.sh

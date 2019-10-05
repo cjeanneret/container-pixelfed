@@ -4,3 +4,5 @@ Just a "light" pixelfed container, based on Alpine Linux instead of heavy Ubuntu
 ## Usage
 podman run -d jinternux/pixelfed
 
+## Listener
+The listener is set to /run/php.sock instead of :9000
